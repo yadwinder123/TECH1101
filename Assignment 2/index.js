@@ -9,7 +9,8 @@ const err = document.querySelector("#error");
 
 function calctaxes(){
     const res = amount.value;
-   
+   let x;
+   let y;
      if (res < 48535){
         x=(res*.15).toFixed(2);
         tax.textContent='$'+x;
