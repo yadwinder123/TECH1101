@@ -1,0 +1,541 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgba(236, 235, 235, 0.911); 
+}
+
+/* typography - starting*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: 20px;
+}
+
+p{
+    margin-top: 0;
+    line-height: 1.5;
+}
+h3 span{
+    color: rgb(172, 41, 41);
+}
+
+ul li{
+    list-style-type: none;
+    margin: .3em;
+    
+}
+/* title is class of h1 */
+.title{
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+    font-weight: 700;
+    margin-top: 5em;
+    background-color: rgba(236, 227, 227, 0.705);
+}
+.title:hover{
+  color: white;
+}
+
+.title span{
+    font-weight: 80;
+    display: block;
+    font-size: .9em;
+}
+
+@media(min-width:60rem){
+    p{
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .title{
+        font-size: 3.7rem;
+    }
+}
+/* typography - ending */
+
+/* header-footer- starting */
+header{
+    margin: 1em;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+
+nav ul, footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li, footer li{
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a, footer a{
+    padding: .5em;
+    font-size: .8rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(194, 21, 21, 0.904);
+   
+}
+
+nav a:hover, nav a:focus, footer a:hover, footer a:focus{
+    color:darkred;
+}
+
+@media(min-width:60rem){
+    .logo{
+        position: absolute;
+    }
+
+    nav{
+        position: relative;
+    }
+}
+/* header-footer- ending */
+
+
+/* background-image-Home page*/
+.background-image-Home{
+    padding: 10em 0;
+    background-image: url(../img/Hometaylorgrote-unsplash.JPG);
+    background-size: cover;
+    background-position: center;
+    color: rgba(194, 21, 21, 0.904);
+}
+
+@media(min-width:60rem){
+    .background-image-Home{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+/* background-image-Home page ending*/
+
+
+/* Button (for stylying ""where to find us button) */
+.button{
+    padding: .5em 1.75em;
+    margin-top: 5em;
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    color: rgba(204, 80, 80, 0.781);
+    border-color: rgba(196, 74, 74, 0.781);
+}
+
+.button:hover, .button:focus{
+    background: rgba(204, 80, 80, 0.781);
+    color: rgba(255, 254, 254, 0.979);
+    border-color: blanchedalmond;
+}
+/* Button - ending */
+
+/* main- starting*/
+main{
+    display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+
+main section{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* main- ending */
+
+/* figure- starting*/
+.img-octopus{
+    display: block;
+    padding: auto;
+    margin: auto;
+    margin-top: 4em;
+}
+/* figure- ending*/
+
+/* Note - starting*/
+.note{
+    padding: 5em 0;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(236, 235, 235, 0.911);
+}
+
+.note section{
+    height: 100%;
+    width: 100%;
+    background: rgba(196, 194, 194, 0.918);
+    padding-top: 3em;
+}
+
+.note span{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+/* Note - ending */
+
+/* Footer - starting*/
+footer{
+    display: grid;
+    background: rgba(32, 32, 32, 0.596);
+	 text-align: center;
+ 	padding: 2em 0;
+}
+
+footer li span{
+    font-weight: 900;
+}
+/* Footer - ending*/
+
+/* Scroll To Top Button Starting  
+==========================*/
+.scrollbtn{
+    padding: 10px;
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(230, 54, 54, 0.781);
+    color: rgba(255, 255, 255, 0.781);
+    cursor: pointer;
+}
+
+
+.scrollbtn:hover{
+    background-color: rgba(235, 12, 12, 0.781);
+}
+
+/* Scroll To Top Button  Ending 
+==========================*/
+
+/* BEERS(BS)  starting*/
+.background-image-Beers-first{
+    padding: 10em 0;
+    background-image: url(../img/DSC_0385.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgba(194, 21, 21, 0.904);
+}
+
+@media(min-width:60rem){
+    .background-image-Beers-first{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+.background-image-Beers-second{
+    padding: 10em 0;
+    background-image: url(../img/beerTanks.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90px;
+    color: rgba(194, 21, 21, 0.904);
+    
+}
+
+@media(min-width:60rem){
+    .background-image-Beers-second{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+.main-beers{
+    font-size: 14px;
+}
+.p-BS{
+    margin-top: -1em;
+}
+
+.title-BS{
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+    font-weight: 700;
+    margin-top: .5em;
+    background-color: rgba(236, 227, 227, 0.705);
+}
+
+.title-BS span{
+    font-weight: 80;
+    display: block;
+    font-size: .9em;
+}
+.div-BS{
+    display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+.div-BS div{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* BEERS  ending*/
+
+/* THE TASTING ROOM(TR) starting */
+.background-image-Taste{
+    padding: 10em 0;
+    background-image: url(../img/tastetatianarodriguez-unsplash.JPG);
+    background-size: cover;
+    background-position: center;
+    color: rgba(194, 21, 21, 0.904);
+}
+
+@media(min-width:60rem){
+    .background-image-Taste{
+        height: 100vh;
+        padding-top: 35vh;
+    }   
+}
+
+.heading-TR{
+    color:rgb(243, 63, 63);
+}
+.heading-TR:hover {
+    text-shadow: 2px 2px 4px rgb(243, 77, 77);
+}
+
+.firstdiv-TR {
+    margin: .5em;
+    margin-top: 3em;
+    background-color:rgba(216, 214, 212, 0.973);
+}
+
+.second-TR{
+    margin: .5em;
+    background-color:rgb(207, 171, 171);
+}
+
+.second-TR ul li{
+    line-height: 2; 
+}
+
+.thirddiv-TR{
+    margin: .5em;
+    background-color:rgba(216, 214, 212, 0.973);
+   
+}
+.fourthdiv-TR{
+    margin: .5em;
+    background-color:rgb(207, 171, 171);
+}
+/* THE TASTING ROOM(TR)  ending*/
+
+/* ARTIST IN RESIDENCE(AR) starting */
+.background-image-Artist{
+    padding: 10em 0;
+    background-image: url(../img/artistThomas\ William.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgba(194, 21, 21, 0.904);
+}
+
+@media(min-width:60rem){
+    .background-image-Artist{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+.main-artist{
+    text-align: left;
+}
+.main-artist a{
+    padding: .5em;
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(194, 21, 21, 0.904);
+}
+
+.p-AR{
+    margin-top: -1em;
+}
+/* ARTIST IN RESIDENCE  ending*/
+
+/* STORY  starting*/
+.main-story section p{
+    text-align:left;
+    justify-content:right;
+    font-size: 14px;
+
+}
+
+.background-image-Story{
+    padding: 10em 0;
+    background-image: url(../img/\ storyBruceHong\ Unsplash.JPG);
+    background-size: cover;
+    background-position: center;
+    color: rgba(194, 21, 21, 0.904);
+}
+
+@media(min-width:60rem){
+    .background-image-Story{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+/* STORY ending*/
+
+/* CONTACT*/
+.background-image-Contact{
+    padding: 10em 0;
+    background-image: url(../img/contact-Kegs.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgba(194, 21, 21, 0.904);
+}
+
+@media(min-width:60rem){
+    .background-image-Contact{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+.main-contact{
+    padding-top: 2.5em;
+    padding-bottom: 5em;
+}
+#contact-sec{
+    border-top: 2px solid rgb(65, 62, 62);
+    border-bottom: 2px solid rgb(65, 62, 62);
+    border-left: 2px solid rgb(65, 62, 62);  
+    
+}
+section ul{
+   
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+section li{
+    display: inline-block;
+    margin: 1em;
+ }
+
+ section li span{
+     color: rgba(196, 15, 15, 0.877);
+ }
+
+/* CONTACT ending*/
+
+/* FIND US (FU) starting*/
+
+.background-image-FindUs{
+    padding: 10em 0;
+    background-image: url(../img/findus.JPG);
+    background-size: cover;
+    background-position: center;
+    color: rgba(194, 21, 21, 0.904);
+}
+
+@media(min-width:60rem){
+    .background-image-FindUs{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+.div-FU{
+    padding: .5em;
+    padding-top: 2em;
+}
+.div-FU a{
+    
+    font-size: .8rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(194, 21, 21, 0.904);
+}
+.div-FU a:hover, .div-FU a:focus{
+    color: rgb(71, 5, 5);;
+}
+
+
+.main-FU{
+   display: grid;
+   grid-template-columns: 33% 34% 33%;
+   grid-template-rows:auto; 
+   padding-bottom: .5em; 
+   
+}
+
+.main-FU div{
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+.firstdiv-FU ul, .fourthdiv-FU ul{
+    text-align: left;
+}
+.thirddiv-FU ul, .sixthdiv-FU ul{
+    text-align: right;
+    padding-right: 2em;
+}
+
+.firstdiv-FU, .thirddiv-FU, .fifthdiv-FU{
+   background-color: rgba(216, 214, 212, 0.973);
+   
+}
+
+.seconddiv-FU, .fourthdiv-FU, .sixthdiv-FU{
+  background-color: rgb(207, 171, 171);
+}
+
+.seventhdiv-FU-Map{
+    grid-column: 1/-1;
+}
+iframe{
+    width: 100%;
+    height:300px;
+}
+/* FIND US (FU)  ending*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                
